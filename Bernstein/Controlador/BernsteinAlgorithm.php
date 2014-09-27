@@ -1,31 +1,6 @@
+
+
 <?php
-
-
-/*
-*
-* $arr_df formato A,B,C|D,F donde ABC->DF
-**/
-// $diff = array_diff(array('F'), array('B','C','F'));
-// print_r($diff);
-// exit();
-
-// if (file_exists('/Users/edwinmalo/NetBeansProjects/Bases1/Bernstein/test.xml')) {
-//     $xml = simplexml_load_file('/Users/edwinmalo/NetBeansProjects/Bases1/Bernstein/test.xml');
-//  
-//     //print_r($xml);
-// } else {
-//     exit('Failed to open test.xml.');
-// }
-
-
-// foreach ($xml->children() as $child) {
-// 	# code...
-// 	foreach ($child ->children() as $value) {
-// 		# code...
-// 		$arr_tmp[$child->getname()][] = (string)$value[0];
-// 	}
-// }
-//print_r($arr_tmp);
 
 //Cierre de F
 $arr_test = array("A,B,C|E", "F,D|A", "A,G|E", "D|C", "B,C|F", "A|H", "F|D", "H|G");
@@ -302,7 +277,3 @@ function cierre($arr_df,$atribute){
 
 
 }
-
-
-
-
