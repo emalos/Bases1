@@ -1,10 +1,27 @@
-<html>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if (isset($_FILES['userfile'])) {
+	# code...
+	require_once 'Modelo/FileControl.php';
+
+	$obj_file = new FileControl("");
+
+	$response = $obj_file -> checkFile($_FILES);
+}
+
+
+?>	
+
+
+	<html>
     <head>
         <title>Bernstein</title>
     </head>
     <body>
-        <form action="../Controlador/procesarArchivo.php" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="MAX_FILE_SIZE" value="100000">
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
             <center>
             <h1>Sintesis de Bernstein</h1>
             <ol>
@@ -37,6 +54,11 @@
                 <tr>
                     <td>
                         <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <?php if(isset($response)) echo $response;?>
                     </td>
                 </tr>
             </table>
