@@ -10,6 +10,7 @@ class FileControl {
 **/
 	public $path;
 	public $xml;
+	public $nombre_archivo;
 
 	function __construct($path){
 
@@ -25,7 +26,7 @@ class FileControl {
 
 	function checkFile(){
 
-		$nombre_archivo = date('YmdHis').'.xml';
+		$this->nombre_archivo = date('YmdHis').'.xml';
 		// $rutaArchivoServidor = '../test/'.$nombre_archivo;
 		$tipo_archivo = $_FILES['userfile']['type'];
 		$tamano_archivo = $_FILES['userfile']['size'];
@@ -36,7 +37,7 @@ class FileControl {
 		    <br><br><table><tr><td><li>Se permiten archivos .xml<br>
 		    <li>se permiten archivos de 100 Kb m&aacute;ximo.</td></tr></table>";
 		}else{
-		    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $this->path.$nombre_archivo)){
+		    if (move_uploaded_file($_FILES['userfile']['tmp_name'], $this->path.$this->nombre_archivo)){
 				$rpta = "Archivo cargado satisfactoriamente";
 				// require '../Modelo/algoritmo2.php';
 				// die;
@@ -45,14 +46,15 @@ class FileControl {
 		    }
 		}
 
-		return $rpta;
+		return array($this->nombre_archivo,$rpta);
 	}
 
 
-	function loadFile(){
+	function loadFile($file){
 
-		if (file_exists()) {
-	    	$this->xml = simplexml_load_file($path);
+		if (file_exists($this->path.$file)) {
+			// echo"$this->path.$file";
+	    	$this->xml = simplexml_load_file($this->path.$file);
 	 
 	    //print_r($xml);
 		} else {
@@ -62,15 +64,16 @@ class FileControl {
 
 	} 
 	
-	function processXml($xml){
+	function processXml(){
 		
-		foreach ($xml->children() as $child) {
+		foreach ($this->xml->children() as $child) {
 			# code...
 			foreach ($child ->children() as $value) {
 				# code...
 				$arr_tmp[$child->getname()][] = (string)$value[0];
 			}
 		}
+		// print_r($arr_tmp);
 	return($arr_tmp);
 
 	}

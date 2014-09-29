@@ -1,14 +1,7 @@
 
 <?php
 
-class Closure {
-
-	function __construct($path){
-
-		
-		
-	}
-
+class Closure{
 
 	function getClosure($arr_df,$atribute){
 
@@ -22,7 +15,6 @@ class Closure {
 		//echo "$closure ";
 		while ($done===false) {
 			# code...
-
 			$arr_dependency = explode("|", $arr_df[$i]);
 			//implicante
 			//$arr_descriptor = str_replace(",", "", $arr_dependency[0]); //$arr_dependency[0];//
@@ -64,7 +56,8 @@ class Closure {
 		return array_unique($arr_closure);
 
 
+	}
+
 }
 
 
-}

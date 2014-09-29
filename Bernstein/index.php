@@ -2,13 +2,51 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-if (isset($_FILES['userfile'])) {
+print_r($_REQUEST);
+
+
+
+// session_destroy();
+// exit();
+// print_r($_SESSION);
+ session_start();
+
+// if (!isset($_SESSION['obj_file'])) {
+	
+// 	# code...
+// 	require_once 'Modelo/FileControl.php';
+
+// 	$obj_file = new FileControl("");
+// 	$_SESSION['obj_file'] = serialize($obj_file);
+// 	echo "lo creo";
+// }else{
+// 	$obj_file = unserialize($_SESSION['obj_file']);
+// 	echo "NNOOOO";
+// }
+
+if (isset($_FILES['userfile']) and isset($_REQUEST["send"])) {
 	# code...
 	require_once 'Modelo/FileControl.php';
 
 	$obj_file = new FileControl("");
 
-	$response = $obj_file -> checkFile($_FILES);
+	list($name,$response) = $obj_file -> checkFile($_FILES);
+	$_SESSION['fileName']=$name;
+
+}elseif (isset($_REQUEST["execute"])) {
+	# code
+	require_once 'Modelo/FileControl.php';
+	require_once 'Vista/View.php';
+	require_once 'Controlador/BernsteinAlgorithm.php';
+
+	$obj_file = new FileControl("");
+
+	$result = $obj_file -> loadFile($_SESSION['fileName']);
+	$controller = new BernsteinAlgorithm($obj_file);
+	$view = new View();
+
+	$result = $obj_file -> processXml();
+
 }
 
 
@@ -53,12 +91,16 @@ if (isset($_FILES['userfile'])) {
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="Enviar">
+                        <input type="submit" name="send" value="Enviar">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <?php if(isset($response)) echo $response;?>
+                        <?php if(isset($response)) echo $response.'<tr>
+                    <td>
+                        <input type="submit" name="execute" value="Ejecutar">
+                    </td>
+                </tr>';?>
                     </td>
                 </tr>
             </table>
