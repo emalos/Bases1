@@ -11,15 +11,19 @@ class FileControl {
 	public $path;
 	public $xml;
 	public $nombre_archivo;
+	public $arr_df;
+	private $obj_controller;
 
-	function __construct($path){
+	function __construct($path,$obj_controller){
 
 		if ($path =='') {
 			# code...
-			$this->path = '/Users/edwinmalo/NetBeansProjects/Bases1/Bernstein/';
+			//$this->path = '/Users/edwinmalo/NetBeansProjects/Bases1/Bernstein/';
+			$this->path = 'files/';
 		}else{
 			$this->path = $path;	
 		}
+		$this->obj_controller=$obj_controller;
 		
 	}
 	 
@@ -73,8 +77,9 @@ class FileControl {
 				$arr_tmp[$child->getname()][] = (string)$value[0];
 			}
 		}
-		// print_r($arr_tmp);
-	return($arr_tmp);
+		$this->arr_df=$arr_tmp["dependencias"];
+// 		print_r($this->arr_df);
+		return $this->obj_controller->getSythesis($this->arr_df);
 
 	}
 

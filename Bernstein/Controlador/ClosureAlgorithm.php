@@ -1,7 +1,7 @@
 
 <?php
 
-class Closure{
+class ClosureAlgorithm{
 
 	function getClosure($arr_df,$atribute){
 

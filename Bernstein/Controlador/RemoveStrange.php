@@ -1,13 +1,15 @@
-<? php
+<?php
 
 
 
 
 class RemoveStrange{
 
-	function __construct(){
+	private $obj_closure;
 
-		
+	function __construct($obj_closure){
+
+		$this->obj_closure=$obj_closure;
 		
 	}
 
@@ -26,8 +28,7 @@ function removeStange($arr_df,$atribute){
 		unset($arr_work[$i]);
 		$arr_new = array_values($arr_work);
 		$new_atribute = implode(",", $arr_new);
-		echo "$arr_df,$new_atribute\n";
-		$arr_cierre = cierre($arr_df,$new_atribute);
+		$arr_cierre = $this->obj_closure->getClosure($arr_df,$new_atribute);
 		$bol_strange = in_array($arr_final[$i], $arr_cierre);
 		$arr_cierres[]=$arr_cierre;
 		if ($bol_strange) {
@@ -46,29 +47,6 @@ function removeStange($arr_df,$atribute){
 		}
 		
 	}
-//print_r($arr_final);
-
-	// $arr_atribute = explode(",", $atribute);
-	// $limit = count($arr_atribute);
-	// $arr_final = $arr_atribute;
-	// foreach ($arr_atribute as $key => $value) {
-	// 	# code...
-	// 	$arr_work = $arr_atribute;
-	// 	unset($arr_work[$key]);
-	// 	$arr_new = array_values($arr_work);
-	// 	$new_atribute = implode(",", $arr_new);
-	// 	//echo "$arr_df,$new_atribute";
-	// 	$arr_cierre = cierre($arr_df,$new_atribute);
-	// 	$bol_strange = in_array($value, $arr_cierre);
-	// 	$arr_cierres[]=$arr_cierre;
-	// 	if ($bol_strange) {
-	// 		# code...
-	// 		//eliminar ese elemento
-	// 		unset($arr_final[$key]);
-
-	// 	}
-
-	// }
 	return array_values($arr_final);
 }
 	
