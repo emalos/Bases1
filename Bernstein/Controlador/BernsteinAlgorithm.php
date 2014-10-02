@@ -36,37 +36,65 @@ class BernsteinAlgorithm{
 
 		}
 
+		//Lado derecho simple
+		foreach ($arr_test as $key => $value) {
+			# code...
+			list($descriptor,$implicated) = explode("|", $value);
+			//$arr_cierre = cierre($arr_test,$descriptor);
+			$arr_implicated = explode(",", $implicated);
+			foreach ($arr_implicated as $key => $value) {
+				# code...
+				$arr_simple_df[] = "$descriptor|$value";
+			}
+// 			echo "$descriptor|$new_implicated\n";
+
+		}
+var_dump($arr_simple_df);
+
+
+
+
+
 		//Eliminar Extraños
 
 // 		echo"Sin elemento extraño: \n";
 		// $arr_test = array("A,B,C|E", "F,D|A", "A,G|E", "D|C", "B,C|F", "A|H", "F|D", "H|G");
-		foreach ($arr_test as $key => $value) {
+		foreach ($arr_simple_df as $key => $value) {
 			# code...
 			list($x,$y) = explode("|", $value); 
 			// $arr_del = delIzq($arr_test,$x);
-			$arr_del = $this->obj_del_strange->removeStange($arr_test,$x);
+			$arr_del = $this->obj_del_strange->removeStange($arr_simple_df,$x,$y);
 			//print_r($arr_del);
 			$algo = implode(",", $arr_del);
 			$arr_no_strange[] = "$algo|".$y;
 		}
+		
+		$arr_no_strange_final = array();
+		foreach ($arr_no_strange as $key => $value) {
+			# code...
+			if (!in_array($value, $arr_no_strange_final)) {
+				# code...
+				$arr_no_strange_final[]=$value;
+			}
+		}
 
-// 		print_r($arr_no_strange);
+ 		var_dump($arr_no_strange_final);
 
 
 		//Eliminar redundancias
 // 		echo "Redundancias\n";
 
-		$arr_test = array("A,B,C|E", "F,D|A", "A,G|E", "D|C", "B,C|F", "A|H", "F|D", "H|G");
+		// $arr_test = array("A,B,C|E", "F,D|A", "A,G|E", "D|C", "B,C|F", "A|H", "F|D", "H|G");
 		//$arr_df = explode("|", $arr_test);
 		// $arr_result = delRedundant($arr_no_strange);
-		$arr_result = $this->obj_del_redundant->removeRedundancy($arr_no_strange);
+		$arr_result = $this->obj_del_redundant->removeRedundancy($arr_no_strange_final);
 // 		print_r($arr_result);
 
 		//DF simplificado
 // 		echo "Sin redundancias\n";
 		$new_df = array_values($arr_result);
 // 		$new_df_closure = (array_values($arr_new_close));
-// 		print_r($new_df);
+		var_dump($new_df);
 
 		//sacar lados iz y der
 		foreach($new_df as $key => $value){

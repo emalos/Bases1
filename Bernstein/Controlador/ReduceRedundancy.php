@@ -14,6 +14,7 @@ class ReduceRedundancy {
 
 	function removeRedundancy($arr_df){
 
+// var_dump($arr_df);
 
 		//Cierre de F
 // 		$arr_test = array("A,B,C|E", "F,D|A", "A,G|E", "D|C", "B,C|F", "A|H", "F|D", "H|G");
@@ -41,29 +42,40 @@ class ReduceRedundancy {
 			$arr_result = $this->obj_closure->getClosure($arr_new_dep,$descriptor);
 			// $arr_cierre = cierre($arr_new_dep,$descriptor);
 			$str_cierre[] = $descriptor."|".(implode(",", $arr_result));
-
-		}
-// 		print_r($str_cierre);
-
-		//Comparar cierres y eliminar redundancias
-		foreach ($str_cierre as $key => $value) {
-			# code...
-			list($x,$y) = explode("|", $value);
-			$arr_implicated = explode(",", $y);
-			list($x1,$y1) = explode("|", $arr_new_close[$key]);
+			
+			list($x1,$y1) = explode("|", $arr_df[$key]);
 			$arr_implicated1 = explode(",", $y1);
-
-		// var_dump($arr_implicated);var_dump($arr_implicated1);
-
-			$arr_redundance = array_diff($arr_implicated1,$arr_implicated);
+			$arr_redundance = array_diff($arr_implicated1,$arr_result);
 			if (count($arr_redundance)==0) {
 				# code...
-// 				echo "borrar\n";
+				echo "borrar\n";
 // 				unset($arr_new_close[$key]);
 				unset($arr_df[$key]);
 
 			}
+
 		}
+		var_dump($arr_df);
+
+// 		//Comparar cierres y eliminar redundancias
+// 		foreach ($str_cierre as $key => $value) {
+// 			# code...
+// 			list($x,$y) = explode("|", $value);
+// 			$arr_implicated = explode(",", $y);
+// 			list($x1,$y1) = explode("|", $arr_df[$key]);
+// 			$arr_implicated1 = explode(",", $y1);
+
+// 		var_dump($arr_implicated);var_dump($arr_implicated1);
+
+// 			$arr_redundance = array_diff($arr_implicated1,$arr_implicated);
+// 			if (count($arr_redundance)==0) {
+// 				# code...
+// 				echo "borrar\n";
+// // 				unset($arr_new_close[$key]);
+// 				unset($arr_df[$key]);
+
+// 			}
+// 		}
 
 		return $arr_df;
 	}
