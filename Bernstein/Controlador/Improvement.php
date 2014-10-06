@@ -38,7 +38,7 @@ class Improvement{
 		// 		$arr_simple_df[] = "$descriptor|$value";
 		// 	}
 		// }
-		var_dump($arr_test);
+		//var_dump($arr_test);
 		$arr_simple_df = $arr_test;
 		
 		//Eliminar Extraños
@@ -62,7 +62,7 @@ class Improvement{
 			}
 		}
 
- 		// var_dump($arr_no_strange_final);
+ 		// //var_dump($arr_no_strange_final);
 
 
  		//remover redundantes
@@ -71,7 +71,7 @@ class Improvement{
 
 		$arr_no_redundant = array_values($arr_result);
 
-		// var_dump($arr_no_redundant);
+		// //var_dump($arr_no_redundant);
  		//redundantes
 
  		//Agrupar en clases segun v1->v2 e F+
@@ -114,22 +114,28 @@ class Improvement{
 				$arr_grouped[] = $arr_relations;
 			}
 			
+		}		var_dump($arr_grouped);
+
+		foreach ($arr_grouped as  $to_group) {
+			# code...
+			$arr_tmp_group[] = $this->groupDFs($to_group);
+
 		}
-		var_dump($arr_grouped);
+		var_dump($arr_tmp_group);
 
  
  		//Algoritmo de eliminacion de normalizacion
 		//Recorremos cada relacion obtenida del algoritmo preparatorio
-		foreach ($arr_grouped as $key => $arr_relation) {
+		foreach ($arr_tmp_group as $key => $arr_relation) {
 			# code...
 			$arr_attributes = $this->getAttributes($arr_relation);
 			$arr_keys = $this->getKeys($arr_relation);
-			// var_dump($arr_attributes);
-			// var_dump($arr_keys);
+			// //var_dump($arr_attributes);
+			// //var_dump($arr_keys);
 			foreach ($arr_attributes as $key_att => $attribute) {
 				# code...
 				//Se revisa que no sea superfluo
-				$response = $this->obj_del_superfluous->getSuperfluous($arr_attributes,$arr_keys,$attribute,$arr_grouped,$key,$key_att);
+				$response = $this->obj_del_superfluous->getSuperfluous($arr_attributes,$arr_keys,$attribute,$arr_tmp_group,$key,$key_att);
 				if (is_array($response) and count($response)>0) {
 					# code...
 					//Se elimina $attribute del $arr_attributes
@@ -173,6 +179,38 @@ class Improvement{
 		return $arr_keys;
 
 
+	}
+
+	function groupDFs($new_df){
+
+		//sacar lados iz y der
+		foreach($new_df as $key => $value){
+		  list($x,$y) = explode("|", $value);
+		  $arr_left_side[] =$x;  
+		  $arr_right_side[] =$y;
+		  
+		}
+
+		//agrupar lados iz identicos
+		foreach($new_df as $key => $value){
+		  list($x,$y) = explode("|", $value);
+		//   $key_df = array_search($value, $new_df);
+		  
+		  $keys_df = array_keys($arr_left_side,$x);
+		//   print_r($keys_df);
+		  
+		  if(is_array($keys_df) and count($keys_df)>0){
+		    foreach($keys_df as $keydf){
+		     $arr_tmp[] = $arr_right_side[$keydf];
+		     unset($arr_left_side[$keydf]);
+		    }
+		    
+		    $arr_union[] = $x."|".implode(",",$arr_tmp);//$arr_tmp;
+		    $arr_tmp = array();
+		  }
+		  
+		}
+		return $arr_union;
 	}
 
 

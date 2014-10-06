@@ -15,7 +15,7 @@ class SuperfluousElement {
 
 	function getSuperfluous($arr_attributes,$relation_keys,$attribute,$arr_grouped,$key_of_relation,$key_att){
 
-echo "NUEVO ATRIBUTO $attribute \n ";
+//echo "NUEVO ATRIBUTO $attribute \n ";
 
 		$arr_keys = Improvement::getAttributes($relation_keys);
 
@@ -26,7 +26,7 @@ echo "NUEVO ATRIBUTO $attribute \n ";
 			# code...
 			//No contiene la llave todos los atributos de Ri
 			$bol_superfluo=true;
-			echo "no contiene todos los atributos\n";
+			//echo "no contiene todos los atributos\n";
 
 
 		}else{
@@ -42,19 +42,19 @@ echo "NUEVO ATRIBUTO $attribute \n ";
 			$bol_attr = strpos($value, $attribute);
 			if ($bol_attr===false) {
 				# code...
-				echo "$value sin el atributo $attribute\n";
+				//echo "$value sin el atributo $attribute\n";
 				$arr_key_i[] = $value;
 			}else{
 				$arr_removed_keys[]=$value;
-				echo "$value con el atributo $attribute\n";
+				//echo "$value con el atributo $attribute\n";
 			}
 		}
-		var_dump($arr_key_i);
+		//var_dump($arr_key_i);
 
 		$arr_att_tmp = $arr_attributes;
 		unset($arr_att_tmp[$key_att]);
-		echo "array atributos sin B\n";
-		var_dump($arr_att_tmp);
+		//echo "array atributos sin B\n";
+		//var_dump($arr_att_tmp);
 
 		//Ki no esta vacio
 		if (count($arr_key_i)>0) {
@@ -82,8 +82,8 @@ echo "NUEVO ATRIBUTO $attribute \n ";
 					
 				}
 			}
-			echo"Gi :\n";
-			var_dump($arr_Gi);
+			//echo"Gi :\n";
+			//var_dump($arr_Gi);
 
 			//Check Restorability
 			foreach ($arr_key_i as $key => $value) {
@@ -91,28 +91,28 @@ echo "NUEVO ATRIBUTO $attribute \n ";
 				$closure = $this->obj_closure->getClosure($arr_Gi,$value);
 				if (!in_array($attribute, $closure)) {
 					# code...
-					echo "no pertenece\n";
+					//echo "no pertenece\n";
 					$bol_superfluo=false;
 					return false;
 				}else{
-					echo"si pertenece\n";
+					//echo"si pertenece\n";
 					$bol_superfluo=true;
 				}
-				var_dump($closure);
+				//var_dump($closure);
 			}
 		
 
 		//Check nonessentiality
 		$arr_tmp = array_diff($relation_keys, $arr_key_i);
 
-		echo"Ki-Ki'\n";
-		var_dump($arr_tmp);
+		//echo"Ki-Ki'\n";
+		//var_dump($arr_tmp);
 
 		foreach ($arr_tmp as $key => $value) {
 			# code...
 			$closure = $this->obj_closure->getClosure($arr_Gi,$value);
-			echo "cierre\n";
-			var_dump($closure);
+			//echo "cierre\n";
+			//var_dump($closure);
 			// $arr_tmp = array_diff($closure, $arr_attributes);
 			$arr_tmp = array_diff($arr_attributes,$closure);
 			if (count($arr_tmp)>0) {
@@ -133,7 +133,7 @@ echo "NUEVO ATRIBUTO $attribute \n ";
 					return false;
 
 				}else{
-					echo"insertar algo";
+					//echo"insertar algo";
 					// $arr_key_i[]=$arr_removed_keys;
 
 					//insertar algo!!
@@ -141,22 +141,22 @@ echo "NUEVO ATRIBUTO $attribute \n ";
 				}
 				
 			}else{
-				echo"si pertenece al cierre\n";
+				//echo"si pertenece al cierre\n";
 			}
 
 		}
 	}else{
-		echo "Ki es VACIO\n";
+		//echo "Ki es VACIO\n";
 		$bol_superfluo = false;
 	}
 
 if ($bol_superfluo) {
 	# code...
-	echo"es superfluo\n";
-	var_dump($arr_key_i);
+	//echo"es superfluo\n";
+	//var_dump($arr_key_i);
 	return $arr_key_i;
 }else{
-	echo"no lo es!!\n";
+	//echo"no lo es!!\n";
 	return false;
 }
 
