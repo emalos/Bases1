@@ -6,7 +6,7 @@ class Vista{
 
 
   function getHtml($arr_final){
-  
+  var_dump($arr_final);
     $html = '';
     foreach ($arr_final as $key=>$value){
     $html .= "<tr>";

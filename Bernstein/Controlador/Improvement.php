@@ -114,13 +114,14 @@ class Improvement{
 				$arr_grouped[] = $arr_relations;
 			}
 			
-		}		var_dump($arr_grouped);
+		}
 
 		foreach ($arr_grouped as  $to_group) {
 			# code...
 			$arr_tmp_group[] = $this->groupDFs($to_group);
 
 		}
+		echo "Elementos Agrupados\n";
 		var_dump($arr_tmp_group);
 
  
@@ -150,6 +151,7 @@ class Improvement{
 			$arr_final[]=array($arr_attributes,$arr_keys);
 		}
 
+		echo "Esquema Mejorado\n";
 		var_dump($arr_final);
 		return $arr_final;
 

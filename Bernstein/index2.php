@@ -42,7 +42,12 @@ if (isset($_FILES['userfile']) and isset($_REQUEST["send"])) {
 	$result = $obj_file -> processXml();
 	
 	$obj_view = new Vista();
-	$html = $obj_view -> getHtml($result);
+	$html='';
+	// foreach ($result as $key => $value) {
+	// 	# code...
+	// 	$html .= $obj_view -> getHtml($value);
+	// }
+	// $html = $obj_view -> getHtml($result);
 // 	print_r($result);
 
 }
