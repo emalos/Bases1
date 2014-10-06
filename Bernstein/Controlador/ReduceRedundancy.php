@@ -55,7 +55,7 @@ class ReduceRedundancy {
 			}
 
 		}
-		var_dump($arr_df);
+		// var_dump($arr_df);
 
 // 		//Comparar cierres y eliminar redundancias
 // 		foreach ($str_cierre as $key => $value) {

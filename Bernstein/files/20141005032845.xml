@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+	<normalizar>
+		<atributos> 
+		<atributo>DeId</atributo>
+		<atributo>DeNombre</atributo>
+		<atributo>DePoblacionEstudiantil</atributo>
+		<atributo>CiDepartamento</atributo>
+		<atributo>CiNombre</atributo>
+		<atributo>PaId</atributo>
+		<atributo>CaId</atributo>
+		<atributo>EmId</atributo>
+		<atributo>PaNombre</atributo>
+		<atributo>PaMoneda</atributo>
+		<atributo>ReId</atributo>
+		<atributo>ReNombre</atributo>
+		<atributo>ReMetaVentas</atributo>
+		<atributo>IeId</atributo>
+		<atributo>IeNombre</atributo>
+		<atributo>IeNombreSede</atributo>
+		<atributo>IeIdentificacion</atributo>
+		<atributo>IeTelefono</atributo>
+		<atributo>IeDireccion</atributo>
+		<atributo>IeFax</atributo>
+		<atributo>IeMail</atributo>
+		<atributo>IePaginaWeb</atributo>
+		<atributo>IeLongitud</atributo>
+		<atributo>IeActivo</atributo>
+		<atributo>IeHoraDescanso</atributo>
+		<atributo>IiId</atributo>
+		<atributo>IeMesElaboracionLista</atributo>
+		<atributo>IeLatitud</atributo>
+		<atributo>IeNumeroPCSAdministrativos</atributo>
+		<atributo>IeBiblioteca</atributo>
+		<atributo>IeBilingue</atributo>
+		<atributo>MoId</atributo>
+		<atributo>MoNombre</atributo>
+		<atributo>NeId</atributo>
+		<atributo>NeNombre</atributo>
+		<atributo>CoId</atributo>
+		<atributo>CoNombre</atributo>
+		<atributo>CoMetaVentas</atributo>
+		<atributo>CoPorcentajePromocion</atributo>
+		<atributo>TcId</atributo>
+		<atributo>TcNombre</atributo>
+		<atributo>PgId</atributo>
+		<atributo>PgNombre</atributo>
+		<atributo>PgNumeroAlumnos</atributo>
+		<atributo>PgParaleloReferencia</atributo>
+		<atributo>RcId</atributo>
+		<atributo>RcNombre</atributo>
+		<atributo>ApId</atributo>
+		<atributo>PbId</atributo>
+		<atributo>ApNumeroEjemplaresPresupuestado</atributo>
+		<atributo>ApValorPresupuestado</atributo>
+		<atributo>ApFechaPresupuesto</atributo>
+		<atributo>ApPathDocumentoAsociado</atributo>
+		<atributo>ApComentarios</atributo>
+		<atributo>ApAnosAdopcion</atributo>
+		<atributo>ApPorcentajeDescuentoAplicado</atributo>
+		<atributo>ApMetaVentas</atributo>
+		<atributo>ApTasaCompraPonderada</atributo>
+		<atributo>ApAdopcionReferencia</atributo>
+		<atributo>HoId</atributo>
+		<atributo>HoNombre</atributo>
+		<atributo>EcId</atributo>
+		<atributo>EcNombre</atributo>
+		<atributo>PcId</atributo>
+		<atributo>PcNombre</atributo>
+		<atributo>PcISBN</atributo>
+		<atributo>IcId</atributo>
+		<atributo>PcCodigoBarras</atributo>
+		<atributo>PcFechaEdicion</atributo>
+		<atributo>PcFechaPublicacion</atributo>
+		<atributo>PcAutores</atributo>
+		<atributo>PcMuestreable</atributo>
+		<atributo>PcActivo</atributo>
+		<atributo>PcFungible</atributo>
+		<atributo>PcEdadMinimaNivelLectura</atributo>
+		<atributo>PcEdadMaximaNivelLectura</atributo>
+		<atributo>PcNumeroPaginas</atributo>
+		<atributo>PcPathPortada</atributo>
+		<atributo>IdId</atributo>
+		<atributo>IdNombre</atributo>
+		<atributo>CcId</atributo>
+		<atributo>CcNombre</atributo>
+		<atributo>JeId</atributo>
+		<atributo>JeNombre</atributo>
+		<atributo>JeHoraInicia</atributo>
+		<atributo>JeHoraTermina</atributo>
+		<atributo>TbId</atributo>
+		<atributo>TbNombre</atributo>
+		<atributo>GcId</atributo>
+		<atributo>GcNombre</atributo>
+		<atributo>TdId</atributo>
+		<atributo>TdNombre</atributo>
+		<atributo>TgId</atributo>
+		<atributo>TgNombre</atributo>
+		<atributo>UsId</atributo>
+		<atributo>UsNombres</atributo>
+		<atributo>UsApellidos</atributo>
+		<atributo>UsFechaNacimiento</atributo>
+		<atributo>UsIdentificacion</atributo>
+		<atributo>UsFechaInicioContrato</atributo>
+		<atributo>UsFechaFinContrato</atributo>
+		<atributo>UsCodigoMETA4</atributo>
+		<atributo>UsPassword</atributo>
+		<atributo>UsTelefono</atributo>
+		<atributo>UsCelular</atributo>
+		<atributo>UsEmail</atributo>
+		<atributo>UsUltimoLogin</atributo>
+		<atributo>UsIdToken</atributo>
+		<atributo>UsUltimaIp</atributo>
+		<atributo>TuId</atributo>
+		<atributo>TuDescripcion</atributo>
+		<atributo>TyId</atributo>
+		<atributo>TyTarea</atributo>
+		<atributo>TySecuencia</atributo>
+		<atributo>CeId</atributo>
+		<atributo>CeNombre</atributo>
+		<atributo>AcId</atributo>
+		<atributo>AcNombre</atributo>
+		<atributo>AcGuias</atributo>
+		<atributo>AeId</atributo>
+		<atributo>AeNombre</atributo>
+		<atributo>AsId</atributo>
+		<atributo>AsNombre</atributo>
+		<atributo>EsId</atributo>
+		<atributo>EsNombre</atributo>
+		<atributo>IpId</atributo>
+		<atributo>IpNombre</atributo>
+		<atributo>TsId</atributo>
+		<atributo>TsNombre</atributo>
+		<atributo>TsMetaVentas</atributo>
+		<atributo>TsPorcentajePromocion</atributo>
+		<atributo>LoId</atributo>
+		<atributo>LoNombre</atributo>
+		<atributo>BaId</atributo>
+		<atributo>BaNombre</atributo>
+		<atributo>TpId</atributo>
+		<atributo>TpNombre</atributo>
+		<atributo>IhId</atributo>
+		<atributo>IiIdioma</atributo>
+		<atributo>EusId</atributo>
+		<atributo>EusDescripcion</atributo>
+		<atributo>GrId</atributo>
+		<atributo>GrNombre</atributo>
+		<atributo>TnId</atributo>
+		<atributo>TnNombre</atributo>
+		<atributo>TnFechaInicio</atributo>
+		<atributo>TnFechaFin</atributo>
+		<atributo>TnMetaVentas</atributo>
+		<atributo>TnMargenNegocio</atributo>
+		<atributo>TnPresupuestoPlanMercadeo</atributo>
+		<atributo>TnPathDocumentoAsociado</atributo>
+		<atributo>TnPathScriptValorizacionAdopciones</atributo>
+		<atributo>TnTemporadaReferencia</atributo>
+		<atributo>TwId</atributo>
+		<atributo>TwNombre</atributo>
+		<atributo>TwValorPotencialMinimo</atributo>
+		<atributo>TwValorPotencialMaximo</atributo>
+		<atributo>NvId</atributo>
+		<atributo>NvNombre</atributo>
+		<atributo>GnId</atributo>
+		<atributo>GnNombre</atributo>
+		<atributo>GnEdadEscolar</atributo>
+		<atributo>AgId</atributo>
+		<atributo>NcId</atributo>
+		<atributo>NcPension</atributo>
+		<atributo>NcNumeroSalasComputo</atributo>
+		<atributo>NcNumeroPCS</atributo>
+		<atributo>NcCodigo</atributo>
+		<atributo>NcNombre</atributo>
+		<atributo>AdId</atributo>
+		<atributo>AdNombreAsignatura</atributo>
+		<atributo>AdIntensidadHorariaDefecto</atributo>
+		<atributo>AdTasaBibliolibros</atributo>
+		<atributo>AdAsignaturaGradoReferencia</atributo>
+		<atributo>CnId</atributo>
+		<atributo>RcId</atributo>
+		<atributo>CnAnosAntiguedad</atributo>
+		<atributo>CnHorarioAtencion</atributo>
+		<atributo>CnComentario</atributo>
+		<atributo>CnFechaActualizacion</atributo>
+		<atributo>PsId</atributo>
+		<atributo>PsIntensidadHoraria</atributo>
+		<atributo>PdId</atributo>
+		<atributo>PdNombre</atributo>
+		<atributo>PdFechaInicio</atributo>
+		<atributo>PdFechaFin</atributo>
+		<atributo>PdKTasaReusoSpb</atributo>
+		<atributo>PdKTasaPensionSpb</atributo>
+		<atributo>PdKTasaVejezSpb</atributo>
+		<atributo>PdKTasaSectorSpb</atributo>
+		<atributo>PdKTasaAreaSpb</atributo>
+		<atributo>PdITasaGradoSpb</atributo>
+		<atributo>PdKTasaGeneroSpb</atributo>
+		<atributo>PdKTasaPrecioSpb</atributo>
+		<atributo>PdKTasaFungibilidadSpb</atributo>
+		<atributo>PdKTasaReusoSpv</atributo>
+		<atributo>PdKTasaPensionSpv</atributo>
+		<atributo>PdKTasaVejezSpv</atributo>
+		<atributo>PdKTasaSectorSpv</atributo>
+		<atributo>PdKTasaAreaSpv</atributo>
+		<atributo>PdITasaGradoSpv</atributo>
+		<atributo>PdKTasaGeneroSpv</atributo>
+		<atributo>PdKTasaFungibilidadSpv</atributo>
+		<atributo>PdPeriodoCalendarioReferencia</atributo>
+		<atributo>UnId</atributo>
+		<atributo>AoId</atributo>
+		<atributo>AoNumeroEjemplares</atributo>
+		<atributo>AoValorCalculado</atributo>
+		<atributo>AoFechaRegistro</atributo>
+		<atributo>PiId</atributo>
+		<atributo>PiNombre</atributo>
+		<atributo>AlId</atributo>
+		<atributo>GiId</atributo>
+		<atributo>GiGradoNivelPeriodoInstitucioneducativaReferencia</atributo>
+		<atributo>NaId</atributo>
+		<atributo>CpId</atributo>
+		<atributo>CpPrincipal</atributo>
+		<atributo>EnId</atributo>
+		<atributo>EnFechaInicio</atributo>
+		<atributo>EnFechaFin</atributo>
+		<atributo>AuId</atributo>
+		<atributo>AuIntensidadHoraria</atributo>
+		<atributo>AuAsignaturaParaleloReferencia</atributo>
+		<atributo>ToId</atributo>
+		<atributo>PpId</atributo>
+		<atributo>CgId</atributo>
+		<atributo>JiId</atributo>
+		<atributo>MeId</atributo>
+		<atributo>MeNombre</atributo>
+		<atributo>NjId</atributo>
+		<atributo>GjId</atributo>
+		<atributo>GjGradoJornadaReferencia</atributo>
+		<atributo>EaId</atributo>
+		<atributo>EaNombre</atributo>
+		<atributo>IanId</atributo>
+		<atributo>IeaId</atributo>
+		<atributo>IgpId</atributo>
+		<atributo>JieId</atributo>
+		<atributo>ImId</atributo>
+		<atributo>ImTotalPesos</atributo>
+		<atributo>ImTotalUnidades</atributo>
+		<atributo>ImAccesiblePesos</atributo>
+		<atributo>ImAccesibleUnidades</atributo>
+	</atributos> 
+	<dependencias>
+		<df>DeId->PaId,DeNombre,DePoblacionEstudiantil</df>
+		<df>PaId->PaId</df>
+		<df>DeId->CcId,CiDepartamento,CiNombre</df>
+		<df>CcId,CiDepartamento->DeId</df>
+		<df>CiNombre,CiDepartamento->DeId</df>
+		<df>PaId->PaNombre,PaMoneda</df>
+		<df>ReId->NaId,UsId,ReNombre,ReMetaVentas</df>
+		<df>NaId,UsId->ReId</df>
+		<df>PaId->DeId</df>
+		<df>DeId->ReId</df>
+		<df>IeId->IeNombre,IeNombreSede,IeIdentificacion,IeTelefono,IeDireccion,IeFax,IeMail,IePaginaWeb,IeLongitud,IeActivo,IeHoraDescanso,IiId,BaId,TpId,TcId,GcId,IeMesElaboracionLista,IeLatitud,IeNumeroPCSAdministrativos,IeBiblioteca,IeBilingue</df>
+		<df>IeIdentificacion->IeId</df>
+		<df>BaId->DeId</df>
+		<df>MoId->MoNombre</df>
+		<df>MoId->PaId</df>
+		<df>NeId->NeNombre</df>
+		<df>NeId->TnId</df>
+		<df>CoId->ReId,UsId,CoNombre,CoMetaVentas,CoPorcentajePromocion</df>
+		<df>ReId->CoId</df>
+		<df>TcId->TcNombre</df>
+		<df>PgId->GcId,JeId,PgNombre,PgNumeroAlumnos,PgParaleloReferencia</df>
+		<df>GcId,JeId->PgId</df>
+		<df>PgParaleloReferencia->PgId</df>
+		<df>RcId->RcNombre</df>
+		<df>ApId->TnId,IeId,AuId,ApNumeroEjemplaresPresupuestado,ApValorPresupuestado,ApFechaPresupuesto,ApPathDocumentoAsociado,ApComentarios,ApAnosAdopcion,ApPorcentajeDescuentoAplicado,ApMetaVentas,ApTasaCompraPonderada,ApAdopcionReferencia</df>
+		<df>IeId,TnId->ApId</df>
+		<df>ApAdopcionReferencia->ApId</df>
+		<df>HoId->HoNombre</df>
+		<df>EcId->EcNombre</df>
+		<df>PcId->PaId,PaId,NeId,TbId,PcNombre,PcISBN,IcId,AcId,PcCodigoBarras,PcFechaEdicion,PcFechaPublicacion,PcAutores,PcMuestreable,PcActivo,PcFungible,PcEdadMinimaNivelLectura,PcEdadMaximaNivelLectura,PcNumeroPaginas,PcPathPortada</df>
+		<df>IdId->IdNombre</df>
+		<df>CcId->CcNombre</df>
+		<df>JeId->JeNombre,JeHoraInicia,JeHoraTermina</df>
+		<df>TbId->TbNombre</df>
+		<df>GcId->GcNombre</df>
+		<df>TdId->TdNombre</df>
+		<df>TgId->TgNombre</df>
+		<df>UsId->GrId,EusId,TuId,UsNombres,UsApellidos,UsFechaNacimiento,TpId,UsIdentificacion,DeId,CaId,UsFechaInicioContrato,UsFechaFinContrato,UsCodigoMETA4,UsPassword,UsTelefono,UsCelular,UsEmail,UsUltimoLogin,UsIdToken,UsUltimaIp</df>
+		<df>TuId->TuDescripcion</df>
+		<df>TyId->PaId,TyTarea,CaId,TySecuencia</df>
+		<df>CeId->EmId,CeNombre</df>
+		<df>AcId->CcId,IpId,AcNombre,AcGuias</df>
+		<df>AeId->AeNombre</df>
+		<df>AsId->AeId,AsNombre</df>
+		<df>AeId->AsId</df>
+		<df>TsId->CoId,TsNombre,TsMetaVentas,TsPorcentajePromocion,UsId</df>
+		<df>LoId->DeId,LoNombre</df>
+		<df>BaId->LoId,BaNombre</df>
+		<df>TpId->TpNombre</df>
+		<df>IiId->IhId,IiIdioma</df>
+		<df>EusId->EusDescripcion</df>
+		<df>GrId->GrNombre</df>
+		<df>TnId->TnNombre,PdId,NeId,TnNombre,TnFechaInicio,TnFechaFin,TnMetaVentas,TnMargenNegocio,TnPresupuestoPlanMercadeo,TnPathDocumentoAsociado,TnPathScriptValorizacionAdopciones,TnTemporadaReferencia</df>
+		<df>TnFechaInicio,TnFechaFin->TnId</df>
+		<df>TnFechaInicio,TnFechaFin->TnNombre</df>
+		<df>TnTemporadaReferencia->TnId</df>
+		<df>TwId->NaId,TwNombre,TwValorPotencialMinimo,TwValorPotencialMaximo</df>
+		<df>NvId->PaId,NvNombre</df>
+		<df>GnId->NvId,GnNombre,GnEdadEscolar</df>
+		<df>NcId->PdId,NvId,IeId,NcPension,NcNumeroSalasComputo,NcNumeroPCS,NcCodigo,NcNombre</df>
+		<df>AdId->GcId,IeId,PdId,AgId,AdNombreAsignatura,AdIntensidadHorariaDefecto,AdTasaBibliolibros,AdAsignaturaGradoReferencia</df>
+		<df>CnId->TnId,IeId,RcId,PgId,CnAnosAntiguedad,CnHorarioAtencion,CnComentario,CnFechaActualizacion</df>
+		<df>PsId->AgId,PcId,PsIntensidadHoraria</df>
+		<df>PdId->PaId,PdNombre,PdFechaInicio,PdFechaFin,PdKTasaReusoSpb,PdKTasaPensionSpb,PdKTasaVejezSpb,PdKTasaSectorSpb,PdKTasaAreaSpb,PdITasaGradoSpb,PdKTasaGeneroSpb,PdKTasaPrecioSpb,PdKTasaFungibilidadSpb,PdKTasaReusoSpv,PdKTasaPensionSpv,PdKTasaVejezSpv,PdKTasaSectorSpv,PdKTasaAreaSpv,PdITasaGradoSpv,PdKTasaGeneroSpv,PdKTasaFungibilidadSpv,PdPeriodoCalendarioReferencia</df>
+		<df>UnId->NeId,PaId,UsId</df>
+		<df>AoId->ApId,PcId,TdId,MeId,AoNumeroEjemplares,AoValorCalculado,AoFechaRegistro,EaId</df>
+		<df>PiId->NaId,PiNombre</df>
+		<df>AlId->PiId,AeId</df>
+		<df>GiId->PdId,GnId,IeId,GiGradoNivelPeriodoInstitucioneducativaReferencia</df>
+		<df>NaId->PaId,NeId,UsId</df>
+		<df>CpId->ApId,CnId,CpPrincipal</df>
+		<df>EnId->TnId,EsId,EnFechaInicio,EnFechaFin</df>
+		<df>AuId->AcId,PgId,AuIntensidadHoraria,AuAsignaturaParaleloReferencia</df>
+		<df>ToId->IeId,TsId</df>
+		<df>PpId->NaId,AuId,UsId</df>
+		<df>CgId->TnId,TwId,IeId</df>
+		<df>JiId->IeId,JeId</df>
+		<df>MeId->MeNombre</df>
+		<df>NjId->NcId,JeId</df>
+		<df>GjId->GcId,JeId,GjGradoJornadaReferencia</df>
+		<df>GjGradoJornadaReferencia->GjId</df>
+		<df>EaId->EaNombre</df>
+		<df>IanId->IeaId,NjId</df>
+		<df>IgpId->IeaId,PgId,GcId</df>
+		<df>JieId->IeaId,JeId</df>
+		<df>ImId->TnId,UsId,ImTotalPesos,ImTotalUnidades,ImAccesiblePesos,ImAccesibleUnidades</df>
+	</dependencias>
+</normalizar>
+
+<!-- 
+Tablename=Departamentos
+DeId
+DePais
+DeNombre
+DePoblacionEstudiantil
+
+Tablename=Ciudades
+CiId
+CiCategoria
+CiDepartamento
+CiNombre
+
+Tablename=Paises
+PaId
+PaNombre
+PaMoneda
+
+Tablename=Regionales
+ReId
+ReNegocioPais
+ReGerenteResponsable
+ReNombre
+ReMetaVentas
+
+Tablename=InstitucionesEducativas
+IeId
+IeDefinicion
+IeNombre
+IeNombreSede
+IeIdentificacion
+IeTelefono
+IeDireccion
+IeFax
+IeMail
+IePaginaWeb
+IeLongitud
+IeActivo
+IeHoraDescanso
+IeCongregaciones
+IePlanLectura
+IeIdiomasInstitucion
+IeTipoEntidadEducativa
+IeTipoEducacion
+IeBarrio
+IeTipoCalendario
+IeTipoIdentificacion
+IeSector
+IeGenero
+IeTipoElaboracionLista
+IeMesElaboracionLista
+IeMesDefinicionLista
+IeLatitud
+IeNumeroPCSAdministrativos
+IeBiblioteca
+IeBilingue
+
+Tablename=Monedas
+MoId
+MoNombre
+
+Tablename=Negocios
+NeId
+NeNombre
+	
+Tablename=Coordinaciones
+CoId
+CoRegional
+CoResponsable
+CoNombre
+CoMetaVentas
+CoPorcentajePromocion
+
+Tablename=TiposSector
+TcId
+TcNombre
+
+Tablename=Paralelos
+PgId
+PgGradoNivelPeriodoInstitucionEducativa
+PgJornada
+PgNombre
+PgNumeroAlumnos
+PgParaleloReferencia
+
+Tablename=RolesContacto
+RcId
+RcNombre
+
+Tablename=Adopciones
+ApId
+ApTemporadaNegocio
+ApInstitucionEducativa
+ApAsignaturaParalelo
+ApProbabildad
+ApNumeroEjemplaresPresupuestado
+ApValorPresupuestado
+ApFechaPresupuesto
+ApPathDocumentoAsociado
+ApComentarios
+ApAnosAdopcion
+ApPorcentajeDescuentoAplicado
+ApMetaVentas
+ApTasaCompraPonderada
+ApAdopcionReferencia
+
+Tablename=Hobbies
+HoId
+HoNombre
+
+Tablename=EstadoCivil
+EcId
+EcNombre
+
+Tablename=PreferenciasLectura
+PfId
+PfNombre
+
+Tablename=Productos
+PcId
+PcPaisImpresion
+PcPaisEdicion
+PcNegocio
+PcTipoProducto
+PcNombre
+PcISBN
+PcIdioma
+PcAgrupacion
+PcCodigoBarras
+PcFechaEdicion
+PcFechaPublicacion
+PcAutores
+PcMuestreable
+PcActivo
+PcFungible
+PcEdadMinimaNivelLectura
+PcEdadMaximaNivelLectura
+PcNumeroPaginas
+PcPathPortada
+
+Tablename=Idiomas
+IdId
+IdNombre
+
+Tablename=CategoriasCiudad
+CcId
+CcNombre
+
+Tablename=Jornadas
+JeId
+JeNombre
+JeHoraInicia
+JeHoraTermina
+
+Tablename=TiposProductos
+TbId
+TbNombre
+
+Tablename=GenerosInstitucionEducativa
+GcId
+GcNombre
+
+Tablename=TiposAdopcion
+TdId
+TdNombre
+
+Tablename=TiposEventos
+TgId
+TgNombre
+
+Tablename=Usuarios
+UsId
+UsGenero
+UsEstado
+UsTipo
+UsNombres
+UsApellidos
+UsFechaNacimiento
+UsTipoIdentificacion
+UsIdentificacion
+UsCiudad
+UsCargo
+UsFechaInicioContrato
+UsFechaFinContrato
+UsCodigoMETA4
+UsPassword
+UsTelefono
+UsCelular
+UsEmail
+UsUltimoLogin
+UsIdToken
+UsUltimaIp
+
+Tablename=TiposUsuarios
+TuId
+TuDescripcion
+
+Tablename=TareasCargo
+TyId
+TyPais
+TyTarea
+TyCargo
+TyProbabilidadDefecto
+TySecuencia
+
+Tablename=CasasEditoriales
+CeId
+CeEmpresas
+CeNombre
+
+Tablename=Agrupaciones
+AcId
+AcCasaEditorial
+AcTipoAgrupacion
+AcNombre
+AcGuias
+
+Tablename=Areas
+AeId
+AeNombre
+
+Tablename=Asignaturas
+AsId
+AsArea
+AsNombre
+
+Tablename=EstadosTemporada
+EsId
+EsNombre
+
+Tablename=TiposAgrupacion
+IpId
+IpNombre
+
+Tablename=Territorios
+TsId
+TsCoordinacion
+TsNombre
+TsMetaVentas
+TsPorcentajePromocion
+TsUsuarioResponsable
+
+Tablename=Localidades
+LoId
+LoCiudad
+LoNombre
+
+Tablename=Barrios
+BaId
+BaLocalidad
+BaNombre
+
+Tablename=TiposIdentificacion
+TpId
+TpNombre
+
+Tablename=IdiomasInstitucion
+IiId
+IiIntensidadHoraria
+IiIdioma
+
+Tablename=EstadosUsuarios
+EusId
+EusDescripcion
+
+Tablename=Generos
+GrId
+GrNombre
+
+
+==============================================
+
+Tablename=TemporadasNegocioPeriodoCalendarioPais
+TnId
+TnPeriodoCalendarioPais
+TnNegocio
+TnNombre
+TnFechaInicio
+TnFechaFin
+TnMetaVentas
+TnMargenNegocio
+TnPresupuestoPlanMercadeo
+TnPathDocumentoAsociado
+TnPathScriptValorizacionAdopciones
+TnTemporadaReferencia
+
+
+Tablename=TipoCategoriasInstitucionEducativa
+TwId
+TwNegocioPais
+TwNombre
+TwValorPotencialMinimo
+TwValorPotencialMaximo
+
+Tablename=NivelesEducativosPais
+NvId
+NvPais
+NvNombre
+
+Tablename=GradosNivelPais
+GnId
+GnNivelEducativo
+GnNombre
+GnEdadEscolar
+
+Tablename=AsignaturasGradoPaisDefecto
+AgId
+AgGradoNivel
+AgAsignatura
+
+Tablename=NivelesInstitucionEducativa
+NcId
+NcPeriodoCalendarioPais
+NcNivelEducativo
+NcInstitucionEducativa
+NcPension
+NcNumeroSalasComputo
+NcNumeroPCS
+NcCodigo
+NcNombre
+
+Tablename=AsignaturasGradosPeriodoInstitucionEducativa
+AdId
+AdGradoNivelPeriodoInstitucionEducativa
+AdInstitucionEducativa
+AdPeriodoCalendarioPais
+AdAsignaturaGradoPais
+AdNombreAsignatura
+AdIntensidadHorariaDefecto
+AdTasaBibliolibros
+AdAsignaturaGradoReferencia
+
+Tablename=ContactosInstitucionEducativa
+CnId
+CnTemporada
+CnInstitucionEducativa
+CnRolContacto
+CnParalelo
+CnPersona
+CnAnosAntiguedad
+CnEstimacionInfluenciaDecision
+CnHorarioAtencion
+CnComentario
+CnUsuarioActualiza
+CnFechaActualizacion
+
+Tablename=ProductosAsignaturasGrado
+PsId
+PsAsignaturaGrado
+PsProducto
+PsIntensidadHoraria
+
+Tablename=PeriodosCalendarioPais
+PdId
+PdPais
+PdTipoCalendario
+PdNombre
+PdFechaInicio
+PdFechaFin
+PdKTasaReusoSpb
+PdKTasaPensionSpb
+PdKTasaVejezSpb
+PdKTasaSectorSpb
+PdKTasaAreaSpb
+PdITasaGradoSpb
+PdKTasaGeneroSpb
+PdKTasaPrecioSpb
+PdKTasaFungibilidadSpb
+PdKTasaReusoSpv
+PdKTasaPensionSpv
+PdKTasaVejezSpv
+PdKTasaSectorSpv
+PdKTasaAreaSpv
+PdITasaGradoSpv
+PdKTasaGeneroSpv
+PdKTasaFungibilidadSpv
+PdPeriodoCalendarioReferencia
+
+Tablename=UsuariosNegocioPais
+UnId
+UnNegocio
+UnPais
+UnUsuario
+
+Tablename=AdopcionProductos
+AoId
+AoAdopcion
+AoProducto
+AoTipoAdopcion
+AoMedioAdopcion
+AoNumeroEjemplares
+AoValorCalculado
+AoFechaRegistro
+AoEstatus
+
+Tablename=PerfilesEspecializacionPromotor
+PiId
+PiNegocioPais
+PiNombre
+
+Tablename=AreasPerfilEspecializacion
+AlId
+AlPerfilEspecializacion
+AlArea
+
+Tablename=GradosNivelPeriodoInstitucionEducativa
+GiId
+GiPeriodoCalendarioPais
+GiGradoNivelPais
+GiInstitucionEducativa
+GiGradoNivelPeriodoInstitucioneducativaReferencia
+
+Tablename=NegociosPais
+NaId
+NaPais
+NaNegocio
+NaUsuarioResponsable
+
+Tablename=ContactosAdopcion
+CpId
+CpAdopcion
+CpContactoInstitucionEducativa
+CpPrincipal
+
+Tablename=EstadosTemporadaNegocio
+EnId
+EnTemporadaNegocio
+EnEstado
+EnFechaInicio
+EnFechaFin
+
+Tablename=AsignaturasParalelo
+AuId
+AuAsignaturaGradoPeriodoInstitucionEducativa
+AuParalelo
+AuIntensidadHoraria
+AuAsignaturaParaleloReferencia
+
+Tablename=TerritoriosInstitucionEducativa
+ToId
+ToInstitucionEducativa
+ToTerritorio
+
+Tablename=PromotoresAsignaturasParalelo
+PpId
+PpNegocioPais
+PpAsignaturaParalelo
+PpPromotor
+
+Tablename=CategoriasInstitucionEducativa
+CgId
+CgTemporadaNegocioPeriodoCalendarioPais
+CgCategoria
+CgInstitucioneEducativa
+
+Tablename=JornadasInstitucionEducativa
+JiId
+JiInstitucionEducativa
+JiJornada
+
+Tablename=MediosAdopcion
+MeId
+MeNombre
+
+Tablename=NivelesJornadaInstitucionEducativa
+NjId
+NjNivelInstitucionEducativa
+NjJornada
+
+Tablename=GradosJornadaInstitucionEducativa
+GjId
+GjGradoNivelPeriodoInstitucionEducativa
+GjJornada
+GjGradoJornadaReferencia
+
+Tablename=EstatusAdopcionProducto
+EaId
+EaNombre
+
+Tablename=InstitucionesEducativasAprobacionNiveles
+IanId
+IanInstitucionEducativaAprobacion
+IanNiveles
+
+Tablename=InstitucionesEducativasAprobacionGradosParalelos
+IgpId
+IgpInstitucionEducativaAprobacion
+IgpParalelos
+IgpGrados
+
+Tablename=JorndasInstitucionEducativaAprobacion
+JieId
+JieInstitucionEducativa
+JieJornada
+
+Tablename=InformacionMercado
+ImId
+ImTemporada
+ImUsuarios
+ImTotalPesos
+ImTotalUnidades
+ImAccesiblePesos
+ImAccesibleUnidades
+ -->

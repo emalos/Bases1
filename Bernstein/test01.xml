@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<normalizar>
+    <atributos>
+        <atributo>a</atributo>
+        <atributo>b</atributo>
+        <atributo>c</atributo>
+        <atributo>d</atributo>
+        <atributo>e</atributo>
+    </atributos>
+    <dependencias>
+        <df>a|b</df>
+        <df>b|a</df>
+        <df>a,c|d,e</df>
+        <df>b,d|c</df>
+    </dependencias>
+</normalizar>

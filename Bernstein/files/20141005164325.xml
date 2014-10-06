@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<normalizar>
+    <atributos>
+        <atributo>A</atributo>
+        <atributo>C</atributo>
+        <atributo>D</atributo>
+        <atributo>E</atributo>
+        <atributo>L</atributo>
+        <atributo>M</atributo>
+        <atributo>N</atributo>
+        <atributo>P</atributo>
+        <atributo>S</atributo>        
+    </atributos>
+    <dependencias>
+        <df>E|N,S</df>
+        <df>N,L|E,M,D</df>
+        <df>E,N|L,C,D</df>
+        <df>C|S</df>
+        <df>D|M</df>
+        <df>M|D</df>
+        <df>E,P,D|A,E</df>
+        <df>N,L,C,P|A</df>
+    </dependencias>
+</normalizar>

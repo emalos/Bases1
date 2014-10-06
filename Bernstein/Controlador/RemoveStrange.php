@@ -41,12 +41,6 @@ function removeStange($arr_df,$atribute,$y){
 		$bol_strange = in_array($arr_final[$i], $arr_cierre);
 		// $bol_strange_2 = in_array($y, $arr_cierre);
 		$check = array_diff($arr_implicated, $arr_cierre);
-		// if ($atribute=='C,E') {
-		// 	# code...
-		// 	echo "cierre";
-		// 	var_dump($arr_cierre);
-		// }
-		// print_r($check);
 
 		$arr_cierres[]=$arr_cierre;
 		if ($bol_strange or (is_array($check) and count($check)==0 )) {

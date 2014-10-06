@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<normalizar>
+    <atributos>
+        <atributo>a</atributo>
+        <atributo>b</atributo>
+        <atributo>c</atributo>
+        <atributo>d</atributo>
+        <atributo>e</atributo>
+        <atributo>f</atributo>
+        <atributo>g</atributo>
+        <atributo>h</atributo>
+        <atributo>i</atributo>
+        <atributo>k</atributo>
+        <atributo>j</atributo>
+        <atributo>l</atributo>
+        <atributo>m</atributo>
+        <atributo>n</atributo>
+        <atributo>p</atributo>
+        <atributo>q</atributo>
+        <atributo>r</atributo>
+        <atributo>s</atributo>
+        <atributo>t</atributo>
+    </atributos>
+    <dependencias>
+        <df>a,b|c</df>
+        <df>a|d,e,f,g</df>
+        <df>e|g</df>
+        <df>f|d,j</df>
+        <df>g|d,i</df>
+        <df>d,m|n,p</df>
+        <df>d|m</df>
+        <df>l|d</df>
+        <df>p,r|s</df>
+        <df>p,q,r|s,t</df>
+        <df>d|k,l</df>
+    </dependencias>
+</normalizar>
